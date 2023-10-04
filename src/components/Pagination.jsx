@@ -5,7 +5,7 @@ const Pagination = () => {
     <div className="pagination-container">
       <small className="small text-secondary">11 - 12 out of 12 items</small>
 
-      <div className="btn-group" aria-label="Pagination buttons">
+      <div className="pagination-buttons" aria-label="Pagination buttons">
         <button
           className="page-btn"
           //   disabled={pageNumber === 0}
@@ -76,10 +76,24 @@ const Pagination = () => {
           <option value={20}>20</option>
           <option value={30}>30</option>
         </select>
-          </div>
-             <small>
-          2 of 2 pages
-        </small>
+      </div>
+       <div>
+        <small>Sort by: </small>
+        <select
+          className="form-select form-select-sm w-auto rounded-3"
+          //   onChange={handlePageSize}
+          //   defaultValue={pageSize}
+        >
+          <option value={"author"}>Author</option>
+          <option value={"country"}>Country</option>
+          <option value={"language"}>Language</option>
+          <option value={"pages"}>Pages</option>
+          <option value={"title"}>Title</option>
+          <option value={"year"}>Year</option>
+      
+        </select>
+      </div>
+      <small>2 of 2 pages</small>
     </div>
   );
 };

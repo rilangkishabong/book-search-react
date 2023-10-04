@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <div className="sticky">
-
         <SearchBar />
         <Pagination />
       </div>
