@@ -101,3 +101,18 @@ h6 {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/* CSS for the SearchBar.jsx */
+.search-container {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+/* CSS for the Pagination.jsx */
+.pagination-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}

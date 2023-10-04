@@ -7,7 +7,7 @@ const Book = ({ title }) => {
       <div className="card-header">
         <img
           className="card-img"
-          src="https://source.unsplash.com/1600x1000/?book-cover"
+          src={process.env.PUBLIC_URL+"book-image.png"}
           alt="food"
         />
         <div className="promotion">Promoted</div>
