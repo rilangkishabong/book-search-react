@@ -19,7 +19,16 @@ const ResultsList = () => {
   return (
       <div className="container">
           {bookList.length!==0 ? bookList.map(book => 
-              <Book key={book.id} title={book.title} author={book.author} />
+            <Book
+              key={book.id}
+              title={book.title}
+              author={book.author}
+              country={book.country}
+              language={book.language}
+              link={book.link}
+              pages={book.pages}
+              year={book.year}
+            />
       ): "Oops! No book found!"}
     </div>
   )

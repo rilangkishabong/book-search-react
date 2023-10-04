@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
 
-const Book = ({ title,author }) => {
+const Book = ({ title, author, country, language, link, pages, year }) => {
   return (
     <div className="card">
       <div className="card-header">
         <img
           className="card-img"
-          src={process.env.PUBLIC_URL+"book-image.png"}
+          src={process.env.PUBLIC_URL + "book-image.png"}
           alt="food"
         />
         <div className="promotion">Promoted</div>
