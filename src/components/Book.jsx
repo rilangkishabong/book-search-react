@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const Book = ({ title }) => {
+const Book = ({ title,author }) => {
   return (
     <div className="card">
       <div className="card-header">
@@ -11,7 +11,7 @@ const Book = ({ title }) => {
           alt="food"
         />
         <div className="promotion">Promoted</div>
-        <div className="discount">50% OFF up to 100</div>
+        <div className="discount">By {author}</div>
         <div className="duration">38 min</div>
       </div>
       <h3>{title}</h3>

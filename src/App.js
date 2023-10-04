@@ -12,7 +12,6 @@ function App() {
         <Pagination />
       </div>
       <ResultsList />
-      {/* <DataTable /> */}
     </>
   );
 }

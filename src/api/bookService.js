@@ -12,4 +12,8 @@ const editBook = (id, newBookData) => {
     return http.put(`/${id}`, newBookData);
 }
 
-export default { getAllBooks, addBook, editBook }
+const searchBook = (title) => {
+    return http.get(`?title=${title}`)
+}
+
+export default { getAllBooks, addBook, editBook, searchBook }
